@@ -20,6 +20,7 @@ public class CountLimit implements Processor {
     private  final ScheduledExecutorService scheduler= Executors.newScheduledThreadPool(1);
     private  AtomicInteger currentRequests = new AtomicInteger(0);
 
+    //TODO 通过配置文件读取
     private int maxRequests;
     public CountLimit(int maxRequests) {
         this.maxRequests = maxRequests;

@@ -29,6 +29,8 @@ public class LeakyBucketLimit implements Processor {
     private final Queue<Task> requestQueue = new LinkedList<>(); // 存储请求的队列
     private  final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
+    //TODO 通过配置文件读取
+
     public LeakyBucketLimit(int capacity, int leakRate) {
         this.capacity = capacity;
         this.leakRate = leakRate;

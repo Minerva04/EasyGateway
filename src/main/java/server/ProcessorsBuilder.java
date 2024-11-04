@@ -3,6 +3,7 @@ package server;
 import processors.auth.AuthProcessor;
 import processors.EmptyProcessor;
 import processors.Processor;
+import processors.flush.BlackFlushProcessor;
 import processors.limit.CountLimit;
 import processors.limit.LeakyBucketLimit;
 import processors.limit.TokenBucketLimit;
@@ -16,7 +17,7 @@ public class ProcessorsBuilder {
     static {
         firstProcessor = new EmptyProcessor();
         //TODO 通过配置文件的形式读取设置的处理器
-        firstProcessor.setNext(new TokenBucketLimit(2,1));
+        firstProcessor.setNext(new BlackFlushProcessor());
     }
 
     public static Processor getFirstProcessor() {

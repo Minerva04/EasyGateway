@@ -8,6 +8,7 @@ public class HttpStatueCode {
     public static final HttpResponseStatus AUTH_ERROR = newStatus(401, "鉴权失败");
 
     public static final HttpResponseStatus LIMIT_ERROR = newStatus(402, "当前服务器访问人数过多");
+    public static final HttpResponseStatus FLUSH_ERROR = newStatus(403, "访问频率过高 请稍后在试");
 
 
     private static HttpResponseStatus newStatus(int statusCode, String reasonPhrase) {
