@@ -5,15 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe166b2-d07b-427b-aa64-8da35e48e573" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/HttpStatueCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/HttpStatueCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/HttpRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/NettyServerHandlerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/NettyServerHandlerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/AuthProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/auth/AuthProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/EmptyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/EmptyProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/MainStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MainStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/ProcessorsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ProcessorsBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -50,6 +67,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\IdeaProjects\EasyGateway" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.MainStarter" />
+      <module name="EasyGateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainStarter" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,11 +100,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730688488753</updated>
-      <workItem from="1730688490011" duration="334000" />
+      <workItem from="1730688490011" duration="15525000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

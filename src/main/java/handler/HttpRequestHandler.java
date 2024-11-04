@@ -10,6 +10,8 @@ import io.netty.channel.SimpleChannelInboundHandler;
 
 
 import io.netty.handler.codec.http.*;
+import processors.Processor;
+import server.ProcessorsBuilder;
 
 public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 
@@ -21,6 +23,8 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         // 获取请求方法和 URI
         HttpMethod method = request.method();
 
+        Processor firstProcessor = ProcessorsBuilder.getFirstProcessor();
+        firstProcessor.process(ctx, request);
         HttpUtil httpUtil = new HttpUtil();
         FullHttpResponse httpResponse = httpUtil.createHttpResponse(request, HttpStatueCode.SUCCESS);
         httpUtil.sendResponse(ctx, httpResponse);

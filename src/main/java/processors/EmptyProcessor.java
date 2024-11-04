@@ -10,7 +10,9 @@ public class EmptyProcessor implements Processor {
     private Processor nextProcessor;
     @Override
     public void process(ChannelHandlerContext ctx, FullHttpRequest request) {
-
+        if(nextProcessor!=null){
+            nextProcessor.process(ctx, request);
+        }
     }
 
     @Override

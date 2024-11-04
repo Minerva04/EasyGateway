@@ -1,0 +1,20 @@
+2024-11-04 11:00:55.870 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 11:35:18.540 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 11:38:22.076 [nioEventLoopGroup-2-2] WARN  io.netty.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+2024-11-04 11:43:57.272 [nioEventLoopGroup-2-4] WARN  io.netty.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+2024-11-04 12:00:39.030 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 12:00:41.591 [nioEventLoopGroup-3-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0x40850555, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:51979]'
+2024-11-04 12:00:41.593 [nioEventLoopGroup-3-1] WARN  io.netty.bootstrap.ServerBootstrap - Unknown channel option 'SO_TIMEOUT' for channel '[id: 0x6b12f16f, L:/[0:0:0:0:0:0:0:1]:8080 - R:/[0:0:0:0:0:0:0:1]:51980]'
+2024-11-04 12:02:21.337 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 12:15:49.714 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 12:19:28.454 [nioEventLoopGroup-2-2] WARN  io.netty.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+2024-11-04 12:29:33.139 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 13:31:33.861 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 13:32:00.620 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 14:26:54.560 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 14:53:43.661 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 15:29:39.708 [main] INFO  server.Starter - server start success 端口:8080
+2024-11-04 15:38:25.366 [main] INFO  server.Starter - server start success 端口:8080

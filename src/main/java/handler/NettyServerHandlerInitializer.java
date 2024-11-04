@@ -19,7 +19,8 @@ public class NettyServerHandlerInitializer extends ChannelInitializer<Channel> {
                 .addLast(new ReadTimeoutHandler(READTIME_OUT, TimeUnit.SECONDS))
                 .addLast(new HttpServerCodec())
                 .addLast( new HttpObjectAggregator(1024 * 1024))
-                .addLast(new HttpRequestHandler());
+                .addLast(new HttpRequestHandler())
+                .addLast(new ExceptionHandler());
 
     }
 }
