@@ -46,4 +46,8 @@ public class CountLimit implements Processor {
     public void setNext(Processor processor) {
         this.nextProcessor = processor;
     }
+
+    public CountLimit() {
+
+    }
 }

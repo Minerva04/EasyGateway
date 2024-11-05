@@ -22,8 +22,8 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         // 解析请求
         // 获取请求方法和 URI
         HttpMethod method = request.method();
-
-        Processor firstProcessor = ProcessorsBuilder.getFirstProcessor();
+        System.out.println(request.uri());
+        Processor firstProcessor = ProcessorsBuilder.getProcessor();
         firstProcessor.process(ctx, request);
         HttpUtil httpUtil = new HttpUtil();
         FullHttpResponse httpResponse = httpUtil.createHttpResponse(request, HttpStatueCode.SUCCESS);

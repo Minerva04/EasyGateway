@@ -31,6 +31,7 @@ public class LeakyBucketLimit implements Processor {
 
     //TODO 通过配置文件读取
 
+
     public LeakyBucketLimit(int capacity, int leakRate) {
         this.capacity = capacity;
         this.leakRate = leakRate;

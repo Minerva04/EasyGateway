@@ -1,0 +1,8 @@
+auth:enable=true &policy=jwt
+flush:enable=true & policy=black & blackTime=3600000
+limit:enable=true & policy=count & maxRequest=1000 & capacity=100 & rate=100
+router:enable=true & policy=config
+routerMap:/aip/user=localhost-8080 & /aip/user=localhost-7070
+           & /aip/home=localhost
+secretMap:/aip/user=secret1 & /aip/home=secret2
+

@@ -1,19 +1,20 @@
 package processors.auth;
 
-import Util.HttpUtil;
 import Util.JwtUtil;
 import Util.ObjectUtil;
 import common.HttpStatueCode;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.FullHttpRequest;
-import io.netty.handler.codec.http.FullHttpResponse;
 import processors.Processor;
 
 import java.util.Optional;
 
 
-public class AuthProcessor implements Processor {
+public class JwtAuthProcessor implements Processor {
     private Processor nextProcessor;
+    public JwtAuthProcessor() {
+
+    }
     @Override
     public void process(ChannelHandlerContext ctx, FullHttpRequest request) {
         String authorization = request.headers().get("Authorization");

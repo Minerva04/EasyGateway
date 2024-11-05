@@ -10,6 +10,8 @@ public class HttpStatueCode {
     public static final HttpResponseStatus LIMIT_ERROR = newStatus(402, "当前服务器访问人数过多");
     public static final HttpResponseStatus FLUSH_ERROR = newStatus(403, "访问频率过高 请稍后在试");
 
+    public static final HttpResponseStatus ROUTER_ERROR = newStatus(404, "访问资源不存在");
+
 
     private static HttpResponseStatus newStatus(int statusCode, String reasonPhrase) {
         return new HttpResponseStatus(statusCode, reasonPhrase);

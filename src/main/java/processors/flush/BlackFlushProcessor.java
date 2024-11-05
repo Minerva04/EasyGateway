@@ -25,6 +25,17 @@ public class BlackFlushProcessor implements Processor {
     private int MAX_REQUESTS = 3;
     //拉黑10分钟
     private long EXPIRE = 1000*60*10;
+
+    public BlackFlushProcessor() {
+
+    }
+    public BlackFlushProcessor(int MAX_REQUESTS,long EXPIRE) {
+        this.MAX_REQUESTS = MAX_REQUESTS;
+        this.EXPIRE = EXPIRE;
+
+    }
+
+
     @Override
     public void process(ChannelHandlerContext ctx, FullHttpRequest request) {
 
@@ -66,8 +77,6 @@ public class BlackFlushProcessor implements Processor {
         }
 
         Optional.ofNullable(nextProcessor).ifPresent(p -> p.process(ctx, request));
-
-
 
     }
 

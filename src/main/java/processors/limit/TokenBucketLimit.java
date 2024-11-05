@@ -34,7 +34,7 @@ public class TokenBucketLimit implements Processor {
         scheduler.scheduleAtFixedRate(() -> {
             int filledTokens = Math.min(capacity, currentTokens.get()+refillRate);
             currentTokens.set(filledTokens);
-        }, 1, 10, TimeUnit.SECONDS);
+        }, 1, 1, TimeUnit.SECONDS);
     }
     @Override
     public void process(ChannelHandlerContext ctx, FullHttpRequest request) {

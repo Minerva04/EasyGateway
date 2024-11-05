@@ -12,11 +12,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class Starter {
+public class NettyStarter {
     private EventLoopGroup workerGroup=new NioEventLoopGroup();
     private EventLoopGroup bossGroup=new NioEventLoopGroup();
     private Channel channel;
-    private static final Logger logger = LoggerFactory.getLogger(Starter.class);
+    private static final Logger logger = LoggerFactory.getLogger(NettyStarter.class);
 
     public void start(int port) throws InterruptedException {
 
