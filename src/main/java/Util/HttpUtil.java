@@ -27,6 +27,19 @@ public class HttpUtil {
         response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
         return response;
     }
+    public FullHttpResponse createHttpResponse(FullHttpRequest request,String responseBody) {
+        // 创建响应对象
+
+
+        FullHttpResponse response = new DefaultFullHttpResponse(
+                request.protocolVersion(),
+                HttpResponseStatus.OK,
+                Unpooled.copiedBuffer(responseBody, StandardCharsets.UTF_8)
+        );
+        response.headers().set(HttpHeaderNames.CONTENT_TYPE, "application/json; charset=UTF-8");
+        response.headers().set(HttpHeaderNames.CONTENT_LENGTH, response.content().readableBytes());
+        return response;
+    }
 
     public void sendResponse(ChannelHandlerContext ctx, FullHttpResponse response) {
         ctx.writeAndFlush(response).addListener(future -> {

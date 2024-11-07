@@ -6,25 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="afe166b2-d07b-427b-aa64-8da35e48e573" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/ProcessorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/auth/JwtAuthProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/auth/JwtAuthProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/processors/flush/BlackFlushProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/flush/BlackFlushProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs-stuy.log.2024-11-07.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs-stuy.log.2024-11-07.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/HttpStatueCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/HttpStatueCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/handler/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/handler/HttpRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/processors/router/ConfigRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/router/ConfigRouter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/processors/router/loadbalance/HashLoadBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/processors/router/loadbalance/HashLoadBalance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ConfigReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/MainStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MainStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ProcessorsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ProcessorsBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Util/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Util/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Util/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Util/HttpUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/common/HttpStatueCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/HttpStatueCode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/processors/ProcessorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/ProcessorFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/processors/auth/JwtAuthProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/auth/JwtAuthProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/processors/flush/BlackFlushProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/flush/BlackFlushProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/handler/HttpRequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/handler/HttpRequestHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/processors/router/ConfigRouter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/processors/router/ConfigRouter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/ConfigReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/MainStarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/MainStarter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/ProcessorsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/ProcessorsBuilder.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/project/IdeaProjects/EasyGateway",
+    "last_opened_file_path": "D:/project/IdeaProjects/springboot05",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730688488753</updated>
-      <workItem from="1730688490011" duration="63986000" />
+      <workItem from="1730688490011" duration="72784000" />
     </task>
     <servers />
   </component>
@@ -131,16 +129,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/processors/router/ConfigRouter.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

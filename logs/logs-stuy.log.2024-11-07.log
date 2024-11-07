@@ -17,3 +17,12 @@
 2024-11-07 14:21:34.381 [main] INFO  server.NettyStarter - server start success 端口:8080
 2024-11-07 14:22:19.150 [main] INFO  server.NettyStarter - server start success 端口:8080
 2024-11-07 14:25:45.281 [main] INFO  server.NettyStarter - server start success 端口:8080
+2024-11-07 15:11:28.490 [main] INFO  server.NettyStarter - server start success 端口:8080
+2024-11-07 15:42:26.414 [main] INFO  server.NettyStarter - server start success 端口:8080
+2024-11-07 16:36:07.272 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:39:17.541 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:40:31.781 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:42:20.930 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:46:33.946 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:52:22.045 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 16:54:26.977 [main] INFO  server.NettyStarter - server start success 端口:9090

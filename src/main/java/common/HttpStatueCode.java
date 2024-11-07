@@ -11,6 +11,7 @@ public class HttpStatueCode {
     public static final HttpResponseStatus FLUSH_ERROR = newStatus(403, "访问频率过高 请稍后在试");
 
     public static final HttpResponseStatus ROUTER_ERROR = newStatus(404, "访问资源不存在");
+    public static final HttpResponseStatus REQUEST_METHOD_ERROR = newStatus(405, "请求方法不支持");
 
 
     private static HttpResponseStatus newStatus(int statusCode, String reasonPhrase) {

@@ -15,7 +15,7 @@ public class ConfigRouter implements Processor {
     private LoadBalance loadBalance;
     private Map<String, List<String>>routerMap;
     public ConfigRouter(LoadBalance loadBalance) {
-        routerMap = ConfigReader.getRouterMap();
+        routerMap = ConfigReader.getRouterMap("routerMap");
         this.loadBalance = loadBalance;
     }
     @Override
@@ -27,11 +27,9 @@ public class ConfigRouter implements Processor {
         for (String s : prefix) {
             if (path.startsWith(s)) {
                 path = path.substring(s.length());
-                //TODO 根据负载均衡策略选择不同的主机
                 String serverPath = loadBalance.select(s, routerMap.get(s), request);
                 path="http://"+serverPath+path;
                 request.setUri(path);
-                System.out.println(request.uri());
                 Optional.ofNullable(nextProcessor).ifPresent(p -> p.process(ctx, request));
                 return;
             }

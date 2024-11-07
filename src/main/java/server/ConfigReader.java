@@ -53,8 +53,8 @@ public class ConfigReader {
     public static Map<String, Map<String, String>> getConfigMap() {
         return configMap;
     }
-    public static Map<String, List<String>>getRouterMap(){
-        Map<String, String> routerMap = configMap.get("routerMap");
+    public static Map<String, List<String>>getRouterMap(String name){
+        Map<String, String> routerMap = configMap.get(name);
         Map<String,List<String>>res=new HashMap<>();
         for (Map.Entry<String, String> entry : routerMap.entrySet()) {
             String key = entry.getKey();
