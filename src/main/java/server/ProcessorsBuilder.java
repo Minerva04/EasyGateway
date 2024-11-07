@@ -37,6 +37,7 @@ public class ProcessorsBuilder {
         processorCreateMap.put(CountLimit.class.getName(), ProcessorFactory::createCountLimit);
         processorCreateMap.put(LeakyBucketLimit.class.getName(), ProcessorFactory::createLeakyBucketLimit);
         processorCreateMap.put(TokenBucketLimit.class.getName(), ProcessorFactory::createTokenBucketLimit);
+        processorCreateMap.put(ConfigRouter.class.getName(), ProcessorFactory::createConfigRouter);
     }
 
 

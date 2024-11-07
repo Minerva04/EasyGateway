@@ -1,5 +1,6 @@
 package processors.flush;
 
+import Util.ObjectUtil;
 import common.HttpStatueCode;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.FullHttpRequest;
@@ -41,7 +42,7 @@ public class BlackFlushProcessor implements Processor {
 
         // 获取IP
         String ip = request.headers().get("X-Forwarded-For");
-        if (ip == null) {
+        if (ObjectUtil.isEmpty(ip)) {
             ip = ctx.channel().remoteAddress().toString();
         }
 

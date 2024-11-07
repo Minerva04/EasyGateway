@@ -48,7 +48,6 @@ public class ConfigReader {
     public void start() {
         loadConfig(FILE_PATH);
         ProcessorsBuilder.initProcessor(configMap);
-        getConfigMap();
     }
 
     public static Map<String, Map<String, String>> getConfigMap() {
@@ -66,6 +65,7 @@ public class ConfigReader {
         }
         return res;
     }
-
-
+    public static Map<String, String>getSecretMap(){
+       return configMap.get("secretMap");
+    }
 }

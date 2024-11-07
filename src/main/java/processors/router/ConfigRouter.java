@@ -5,15 +5,18 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import processors.Processor;
+import processors.router.loadbalance.LoadBalance;
 import server.ConfigReader;
 
 import java.util.*;
 
 public class ConfigRouter implements Processor {
     private Processor nextProcessor;
+    private LoadBalance loadBalance;
     private Map<String, List<String>>routerMap;
-    public ConfigRouter() {
+    public ConfigRouter(LoadBalance loadBalance) {
         routerMap = ConfigReader.getRouterMap();
+        this.loadBalance = loadBalance;
     }
     @Override
     public void process(ChannelHandlerContext ctx, FullHttpRequest request) {
@@ -25,13 +28,15 @@ public class ConfigRouter implements Processor {
             if (path.startsWith(s)) {
                 path = path.substring(s.length());
                 //TODO 根据负载均衡策略选择不同的主机
+                String serverPath = loadBalance.select(s, routerMap.get(s), request);
+                path="http://"+serverPath+path;
+                request.setUri(path);
+                System.out.println(request.uri());
                 Optional.ofNullable(nextProcessor).ifPresent(p -> p.process(ctx, request));
                 return;
             }
         }
         sendHttpResponse(ctx, request, HttpStatueCode.ROUTER_ERROR);
-
-
 
     }
 

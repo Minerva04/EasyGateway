@@ -4,6 +4,11 @@ import processors.flush.BlackFlushProcessor;
 import processors.limit.CountLimit;
 import processors.limit.LeakyBucketLimit;
 import processors.limit.TokenBucketLimit;
+import processors.router.ConfigRouter;
+import processors.router.loadbalance.HashLoadBalance;
+import processors.router.loadbalance.LoadBalance;
+import processors.router.loadbalance.PollingLoadBalance;
+import processors.router.loadbalance.RandomLoadBalance;
 
 
 import java.util.Map;
@@ -39,4 +44,15 @@ public class ProcessorFactory {
         Processor o = (Processor)aClass.getConstructor().newInstance();
         return o;
     }
+    public static Processor createConfigRouter(Map<String, String> property)  {
+        String loadBalance = property.getOrDefault("loadBalance", "hash");
+        LoadBalance lb = null;
+        switch (loadBalance) {
+            case "hash": lb=new HashLoadBalance();break;
+            case "polling":lb=new PollingLoadBalance();break;
+            case "random":lb=new RandomLoadBalance();break;
+        }
+        return new ConfigRouter(lb);
+    }
+
 }
