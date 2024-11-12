@@ -8,6 +8,6 @@ public class MainStarter {
         ConfigReader configReader = new ConfigReader();
         configReader.start();
         NettyStarter serverStarter = new NettyStarter();
-        serverStarter.start(9090);
+        serverStarter.start(1001);
     }
 }

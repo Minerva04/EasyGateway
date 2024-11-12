@@ -23,7 +23,6 @@ public class TokenBucketLimit implements Processor {
     private AtomicInteger currentTokens = new AtomicInteger(0); // 当前桶中的令牌
     private  final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-    //TODO 通过配置文件读取
     public TokenBucketLimit(int capacity, int refillRate) {
         this.capacity = capacity;
         this.refillRate = refillRate;

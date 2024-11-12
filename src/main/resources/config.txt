@@ -1,10 +1,10 @@
-auth:enable=true &policy=jwt
-flush:enable=true & policy=black & blackTime=3600000
-limit:enable=true & policy=count & maxRequest=1000 & capacity=100 & rate=100
+#auth:enable=true &policy=jwt
+#flush:enable=true & policy=black & blackTime=3600000
+#limit:enable=true & policy=token & maxRequest=20000 & capacity=10000 & rate=10000
 router:enable=true & policy=config & loadBalance=hash
-routerMap:/api=localhost-8080
+routerMap:/api=localhost-1249
 #& /api/user=localhost-7070
 #           & /api/user=localhost-6060 &/api/home=localhost-1111
-grayRouterMap:/api/user=graylocalhost:8080
+#grayRouterMap:/api/user=graylocalhost:8080
 secretMap:/api/user=secret1 & /api/home=secret2
 

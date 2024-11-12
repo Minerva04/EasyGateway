@@ -29,8 +29,6 @@ public class HttpUtil {
     }
     public FullHttpResponse createHttpResponse(FullHttpRequest request,String responseBody) {
         // 创建响应对象
-
-
         FullHttpResponse response = new DefaultFullHttpResponse(
                 request.protocolVersion(),
                 HttpResponseStatus.OK,

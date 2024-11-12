@@ -1,5 +1,7 @@
 package server;
 
+import Util.ObjectUtil;
+
 import java.io.*;
 import java.util.*;
 
@@ -56,13 +58,16 @@ public class ConfigReader {
     public static Map<String, List<String>>getRouterMap(String name){
         Map<String, String> routerMap = configMap.get(name);
         Map<String,List<String>>res=new HashMap<>();
-        for (Map.Entry<String, String> entry : routerMap.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue().replace("-", ":");
-            String[] split = value.split("&");
-            List<String> strings = Arrays.asList(split);
-            res.put(key, strings);
+        if(routerMap!=null){
+            for (Map.Entry<String, String> entry : routerMap.entrySet()) {
+                String key = entry.getKey();
+                String value = entry.getValue().replace("-", ":");
+                String[] split = value.split("&");
+                List<String> strings = Arrays.asList(split);
+                res.put(key, strings);
+            }
         }
+
         return res;
     }
     public static Map<String, String>getSecretMap(){

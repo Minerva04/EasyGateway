@@ -26,3 +26,60 @@
 2024-11-07 16:46:33.946 [main] INFO  server.NettyStarter - server start success 端口:9090
 2024-11-07 16:52:22.045 [main] INFO  server.NettyStarter - server start success 端口:9090
 2024-11-07 16:54:26.977 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 17:04:02.106 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 19:00:03.765 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 19:31:37.508 [nioEventLoopGroup-2-12] ERROR io.netty.util.ResourceLeakDetector - LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:402)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:173)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:107)
+	handler.HttpRequestHandler.channelRead0(HttpRequestHandler.java:61)
+	handler.HttpRequestHandler.channelRead0(HttpRequestHandler.java:27)
+	io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296)
+	io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-07 19:45:46.673 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 19:47:39.342 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 19:59:34.998 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:03:40.376 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:05:49.983 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:05:59.729 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:27:35.748 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:28:51.770 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:29:12.581 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:31:17.292 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:32:20.060 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:34:11.755 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:35:02.927 [main] INFO  server.NettyStarter - server start success 端口:9090
+2024-11-07 20:35:44.448 [main] INFO  server.NettyStarter - server start success 端口:9090
